@@ -33,6 +33,7 @@
 .prf_img {
   width: auto;
   height: 300px;
+  cursor: pointer;
 }
 .prf_syosai img {
   width: 280px;
