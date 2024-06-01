@@ -1,3 +1,16 @@
+const visitorView = document.getElementById("visitor");
+
+let visitorNum = 0;
+
+if (visitorNum) {
+  const visitorNumJason = localStorage.visitorNum;
+  visitorNum = JSON.parse(visitorNumJason);
+}
+
+visitorNum++;
+visitorView.textContent = `あなたは${visitorNum}人目の来訪者です！`;
+localStorage.visitorNum = JSON.stringify(visitorNum);
+
 function updateTime() {
   let text = document.getElementById("clock");
 
